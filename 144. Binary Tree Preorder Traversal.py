@@ -10,9 +10,9 @@ class Solution:
         if not root:
             return res
         res.append(root.val)
-        if root.right:
-            res.extend(self.preorderTraversal(root.right))
         if root.left:
             res.extend(self.preorderTraversal(root.left))
+        if root.right:
+            res.extend(self.preorderTraversal(root.right))
 
         return res
