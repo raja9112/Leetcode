@@ -12,6 +12,7 @@ class Solution:
         return n2
         
         # Recursion
+        # this recursive solution has exponential time complexity, resulting in a lot of redundant calculations.
         # if n == 0 or n == 1:
         #     return 1
         # return self.climbStairs(n - 1) + self.climbStairs(n - 2)
