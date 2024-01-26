@@ -4,10 +4,16 @@ class Solution:
         current = 0
 
         for n in nums:
+            # Time: 519ms
             if current < 0:
                 current = 0
             current += n
             max_sub = max(max_sub, current)
+            
+            # Time: 569ms
+            # current = max(n, current+n)
+            # max_sub = max(max_sub, current)
+            
         return max_sub
         # We don't need negative number since the output is a largest number(positive number), 
         # so we are iterate throught the nums to increment the value of current, while iteration igf the current's is less than 0, make current = 0 and 
