@@ -17,6 +17,17 @@ class Solution:
         #     return 1
         # return self.climbStairs(n - 1) + self.climbStairs(n - 2)
         
+        # DP - Memoization - Time  complexity exceeded for input 44
+        # memo ={}
+
+        # if n<=3:
+        #     return n
+        
+        # if n not in memo:
+        #     memo[n] = self.climbStairs(n-1) + self.climbStairs(n-2)
+
+        # return memo[n]
+        
 # You are climbing a staircase. It takes n steps to reach the top.
 
 # Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
