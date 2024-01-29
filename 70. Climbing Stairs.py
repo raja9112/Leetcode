@@ -1,11 +1,11 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
         # Explanation with image is in leetcode hint.
-        if n <= 3:
-            return n
-        n1, n2 = 2, 3
+        if n <= 3:      #
+            return n    #
+        n1, n2 = 2, 3       #1, 1
 
-        for i in range(4, n+1):
+        for i in range(4, n+1):     # for i in range(n-1):
             temp = n1 + n2
             n1 = n2
             n2 = temp
