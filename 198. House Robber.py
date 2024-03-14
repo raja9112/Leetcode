@@ -1,5 +1,5 @@
 class Solution:
-    def rob(self, nums: List[int]) -> int:
+    def rob(self, nums: list[int]) -> int:
         rob1, rob2 = 0, 0
 
         for i in nums:
@@ -8,3 +8,6 @@ class Solution:
             rob2 = temp
         return rob2
         
+        
+obj = Solution()
+print(obj.rob([2,3,2]))
