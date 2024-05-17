@@ -45,17 +45,16 @@ class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         total = sum(nums)
 
-        leftSum = 0
-
+        leftsum = 0
         for i in range(len(nums)):
-            rightSum = total - nums[i] - leftSum
-            if rightSum == leftSum:
+            rightsum = total - nums[i] - leftsum
+            if leftsum == rightsum:
                 return i
-            leftSum += nums[i]
+            leftsum += nums[i]
         return -1
 
         # Get the total sum of nums[]
         # Assign the leftSum to add the number of lest side.
-        # Get the rightSum value by subtractiing the total, array element(number), and leftSsum(sum of elements in left side)
+        # Get the rightSum value by subtracting the total, array element(number), and leftSsum(sum of elements in left side)
         # IF it leftSum and rightSum meets the condition, then return i or add the number in leftSum.
         # Else return -1
