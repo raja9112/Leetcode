@@ -4,7 +4,7 @@
 
 # Return the minimum cost to reach the top of the floor.
 
- 
+# Easy - Leetcode 75
 
 # Example 1:
 
